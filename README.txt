@@ -1,42 +1,42 @@
-PETUALANGAN SI CAMPURAN — PANDUAN PEMULA
+QUIZ SPRINT — PENGETAHUAN UMUM SMA/SMK
 
 Isi paket:
-- index.html: seluruh game (HTML, CSS, JavaScript) dalam satu file.
-- Tidak perlu menginstal framework atau mengunduh gambar/suara dari internet.
-- Bisa dibuka offline setelah file tersimpan di perangkat.
+- index.html: game dalam satu file
+- README.txt: panduan pemakaian
 
-CARA MENJALANKAN DI KOMPUTER
-1. Ekstrak file ZIP.
-2. Buka folder petualangan_si_campuran.
+Fitur:
+- 5 level, 40 soal contoh
+- Timer 10, 15, atau 20 detik
+- Mode individu dan duel dua tim di satu perangkat
+- 100 poin per jawaban benar + bonus kecepatan
+- Akurasi, bintang, progres level, rekor lokal
+- Responsif untuk HP dan komputer
+- Dapat dimainkan offline setelah file tersedia
+
+Menjalankan di komputer:
+1. Ekstrak ZIP.
+2. Buka folder kuis_cepat_pengetahuan_umum.
 3. Klik dua kali index.html.
-4. Game terbuka di Chrome, Edge, Firefox, atau browser modern lain.
-5. Klik "Mulai / Lanjutkan". Gunakan tombol panah kiri/kanan dan Spasi/atas.
+4. Gunakan browser modern seperti Chrome atau Edge.
 
-CARA MENJALANKAN DI HP ANDROID
-1. Ekstrak ZIP memakai aplikasi pengelola berkas.
-2. Buka index.html dengan browser. Jika pengelola berkas tidak menawarkan browser, pindahkan folder ke komputer atau unggah sebagai website.
-3. Gunakan tombol kiri, kanan, dan lompat di bawah area game.
-
-CARA MENERBITKAN GRATIS DENGAN GITHUB PAGES
-1. Masuk ke GitHub dan buat repository baru, misalnya petualangan-si-campuran.
-2. Unggah index.html ke halaman utama repository (root).
+Publikasi gratis dengan GitHub Pages:
+1. Masuk ke https://github.com lalu buat repository `kuis-pengetahuan-umum`.
+2. Unggah index.html ke bagian utama (root) repository.
 3. Buka Settings > Pages.
-4. Pada Build and deployment, pilih Deploy from a branch.
+4. Pada Build and deployment pilih Deploy from a branch.
 5. Pilih branch main dan folder /(root), lalu Save.
-6. Tunggu beberapa menit. GitHub akan menampilkan URL Pages untuk dibagikan.
-7. Buka URL itu sekali saat online. Untuk mode offline di perangkat, unduh file ZIP dan buka index.html secara lokal.
-Catatan: versi ini belum memasang service worker/PWA. Karena semua kode ada dalam satu file tanpa aset eksternal, file lokal dapat dimainkan offline. Website yang dibuka lewat URL tidak otomatis bisa offline jika belum pernah di-cache oleh browser.
+6. Tunggu publikasi. URL biasanya https://NAMA-AKUN.github.io/kuis-pengetahuan-umum/
 
-FITUR
-- Platformer dengan gerak, lompat, kristal, rintangan, nyawa, dan 10 level.
-- Kuis pilihan ganda dari beberapa mata pelajaran SMA.
-- Skor: kristal +25, jawaban benar +100, level selesai +250, bonus nyawa +20 per nyawa.
-- Efek suara sederhana memakai Web Audio setelah interaksi pengguna.
-- Papan peringkat lokal, laporan belajar, dan ekspor CSV.
-- Nama pemain/tim dapat diganti.
+Cara bermain:
+1. Klik Mulai Kuis.
+2. Pilih Individu atau Duel Tim.
+3. Pilih level yang terbuka dan waktu per soal.
+4. Jawaban benar mendapat 100 poin ditambah bonus berdasarkan sisa waktu.
+5. Selesaikan semua soal untuk melihat akurasi dan bintang.
+6. Level berikutnya terbuka setelah level diselesaikan.
 
-BATASAN PENTING
-- Papan peringkat dan data tersimpan di browser/perangkat yang sama (localStorage), belum tersinkron antarperangkat atau antarpemain secara online.
-- Untuk permainan multiplayer online sungguhan, akun, dan peringkat global, perlu backend/database dan pengamanan tambahan.
-- Isi soal adalah contoh pembelajaran. Guru sebaiknya meninjau dan menyesuaikannya dengan kurikulum sekolah sebelum digunakan untuk penilaian resmi.
-- Hindari menyimpan nama lengkap, NISN, atau data sensitif siswa di versi demo.
+Catatan:
+- Progres disimpan di localStorage browser perangkat yang sama, tidak otomatis sinkron.
+- Mode tim menggunakan satu perangkat dan dua tim bergiliran.
+- Papan peringkat online antarkelas/perangkat membutuhkan backend/database.
+- Soal adalah contoh latihan; guru sebaiknya meninjau dan menyesuaikan dengan kebutuhan kelas.
